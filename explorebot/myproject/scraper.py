@@ -52,7 +52,7 @@ class HtmlScraperSpider(scrapy.Spider):
         try:
             self.log(f'Response received - Status: {response.status}, URL: {response.url}')
             filename = response.url.split('/')[-1]
-            filepath = Path('html_downloads') / f'{filename}.html'
+            filepath = Path('html_downloads') / f'{filename}'
             
             if self.body_tag:
                 content = response.css(self.body_tag).get()
@@ -83,3 +83,4 @@ if spider.start_urls:
     process.start()
 else:
     print("The initial URL file is empty.")
+
