@@ -9,7 +9,7 @@ import pandas as pd
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = 'INSERT-API-KEY-HERE'
 
 # Load OpenAI API key from environment variable
 api_key = os.getenv('OPENAI_API_KEY')
