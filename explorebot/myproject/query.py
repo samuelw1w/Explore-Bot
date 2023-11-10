@@ -7,7 +7,7 @@ from llama_index.node_parser import SimpleNodeParser
 
 # Setup logging
 logging.basicConfig(level=logging.INFO)
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = 'INSERT-API-KEY-HERE'
 
 # Load OpenAI API key from environment variable
 api_key = os.getenv('OPENAI_API_KEY')
